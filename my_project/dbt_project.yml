@@ -33,5 +33,5 @@ models:
   my_project:
   
     sample1:
-      +schema: sample1_schema
+  #    +schema: sample1_schema
       +materialized: table
