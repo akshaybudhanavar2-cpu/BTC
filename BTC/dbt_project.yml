@@ -33,3 +33,5 @@ models:
   BTC:
     stage:
       +materialized: table
+    DEV:
+      +materialized: table

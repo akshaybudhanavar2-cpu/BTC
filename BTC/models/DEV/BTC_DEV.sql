@@ -1,0 +1,1 @@
+select * from {{ ref('BTC_TXN_SRC') }}

@@ -1,6 +1,12 @@
 version: 2
 
 sources:
+  - name: DEV
+    database: BTC
+    schema: DEV
+    tables:
+      - name: BTC_TXN_SRC     
+
   - name: STAGE
     database: BTC
     schema: STAGE
@@ -11,7 +17,17 @@ sources:
           freshness:
             warn_after:
               count: 1
-              period: minute
+              period: hour
             error_after:
               count: 2
-              period: minute
+              period: hour
+        columns:
+          - name: FEE
+            tests:
+              - not_null
+              - unique
+          - name: INPUT_VALUE
+            tests:
+              - not_null
+              - unique
+     

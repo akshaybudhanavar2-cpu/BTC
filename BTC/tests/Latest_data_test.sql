@@ -1,0 +1,1 @@
+select * from {{ ref('BTC_DEV') }} where FEE is null limit 1
