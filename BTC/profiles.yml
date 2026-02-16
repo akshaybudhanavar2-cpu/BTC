@@ -1,0 +1,13 @@
+BTC:
+  outputs:
+    dev:
+      account: EZWUKBJ-GA39028
+      database: BTC
+      password: Akshay06101992
+      role: ACCOUNTADMIN
+      schema: Stage
+      threads: 1
+      type: snowflake
+      user: akshaybudhanavar
+      warehouse: LARGE_WH
+  target: dev
