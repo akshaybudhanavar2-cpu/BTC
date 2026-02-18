@@ -9,5 +9,5 @@ BTC:
       threads: 1
       type: snowflake
       user: akshaybudhanavar
-      warehouse: LARGE_WH
+      warehouse: COMPUTE_WH
   target: dev

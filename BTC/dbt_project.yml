@@ -32,6 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   BTC:
     stage:
-      +materialized: table
+      +materialized: view
     DEV:
-      +materialized: table
+      +materialized: view
+
